@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Advanced HTML 5 Elements and Forms">
+    <title>HTML 5 Elements and Forms</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <!-- Navigation links for different sections -->
+                <li><a href="#lists">Ordered Lists</a></li>
+                <li><a href="#images">External Images and Audios</a></li>
+                <li><a href="#tables">Tables</a></li>
+                <li><a href="#forms">Registration Forms</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="lists">
+            <h1>Ordered Lists</h1>
+            <ol type="i"> <!-- Ordered list with Roman numerals -->
+                <li>Shoes
+                    <ol type="i"> <!-- Nested ordered list -->
+                        <li>Canvas</li>
+                        <li>Loafers</li>
+                    </ol>
+                </li>
+                <li>Foodstuff
+                    <ol type="i">
+                        <li>Grains</li>
+                        <li>Dairy Product</li>
+                    </ol>
+                </li>
+                <li>Stationery
+                    <ol type="i">
+                        <li>Pencils</li>
+                        <li>Books</li>
+                    </ol>
+                </li>
+                <li>Clothes
+                    <ol type="i">
+                        <li>Jacket</li>
+                        <li>Skirt</li>
+                    </ol>
+                </li>
+                <li>Vegetables
+                    <ol type="i">
+                        <li>Spinach</li>
+                        <li>Kales</li>
+                    </ol>
+                </li>
+            </ol>
+        </section>
+        
+        <section id="images">
+            <h1>Images and Audio</h1>
+            <article id="imgs">
+                <h2>Images from External Source</h2>
+                <!-- Displaying images from external links -->
+                <img src="https://images.pexels.com/photos/1563356/pexels-photo-1563356.jpeg?auto=compress&cs=tinysrgb&w=300" alt="A straight road" height="350" width="400">
+                <img src="https://images.pexels.com/photos/2176593/pexels-photo-2176593.jpeg?auto=compress&cs=tinysrgb&w=300" alt="A straight road" height="350" width="400"><br>
+                <img src="https://images.pexels.com/photos/69776/tulips-bed-colorful-color-69776.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Flowers" height="350" width="400">
+                <img src="https://images.pexels.com/photos/56866/garden-rose-red-pink-56866.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Pink flower" height="350" width="400">
+            </article>
+            
+            <article id="audio">
+                <h2>Audio</h2>
+                <!-- Audio player with looping enabled -->
+                <audio controls loop>
+                    <source src="./audio/Sauti Sol - Melanin ft Patoranking (Official Music Video) SMS [Skiza 1051692] to 811.mp4" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
+            </article>
+            
+            <article id="video">
+                <h2>HTML 5 Tutorial Video</h2>
+                <!-- Embedded YouTube video -->
+                <iframe width="640" height="340" src="https://www.youtube.com/embed/pQN-pnXPaVg?si=28mviEq7EOVOhQwU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </article>
+        </section>
+
+        <section id="tables">
+            <h1>A Simple Table</h1>
+            <table border="1">
+                <caption>Contact Information</caption>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Address</th>
+                        <th>Mobile</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Shanice</td>
+                        <td>123 Main Street, USA</td>
+                        <td>0734571902</td>
+                        <td>shanice89@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>John</td>
+                        <td>Kenyatta Dr 8, Nairobi, Kenya</td>
+                        <td>0712562839</td>
+                        <td>john34@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Blessings</td>
+                        <td>42 Willow Lane, London, UK</td>
+                        <td>0789623651</td>
+                        <td>bl3ssing5@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Wanjiku</td>
+                        <td>12/3 Main Road, Bangalore, India</td>
+                        <td>0725637488</td>
+                        <td>wanjiku09@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Flavian</td>
+                        <td>Tokyo-to Chiyoda-ku, Japan</td>
+                        <td>0732949569</td>
+                        <td>flavian@gmail.com</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="forms">
+            <h1>Registration Form</h1>
+            <form action="" method="">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <!-- User name input field -->
+                    <label for="name">Your Name: </label><br>
+                    <input type="text" name="name" id="name" required placeholder="Jane Doe"><br>
+                    
+                    <!-- Email input field -->
+                    <label for="email">Email: </label><br>
+                    <input type="email" name="email" id="email" required><br>
+                    
+                    <!-- Password input field -->
+                    <label for="password">Password:</label><br>
+                    <input type="password" name="password" id="password" required minlength="8" maxlength="20"><br><br>
+                    <label for="message">Your message</label><br>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Your queries"></textarea>
+
+                    <!----Radio buttons and checkboxes--->
+                    <form>
+                        <!-- Gender Section -->
+                        <fieldset>
+                            <legend>Gender</legend>
+                            
+                            <!-- Male radio button -->
+                            <label for="male">Male</label>
+                            <input type="radio" name="gender" id="male" value="male"><br>
+                            
+                            <!-- Female radio button -->
+                            <label for="female">Female</label>
+                            <input type="radio" name="gender" id="female" value="female">
+                        </fieldset>
+                        
+                        <!-- Countries Section -->
+                        <fieldset>
+                            <legend>Countries</legend>
+                            
+                            <!-- Dropdown list for selecting a country -->
+                            <select name="countries" id="countries">
+                                <!-- Group of country options -->
+                                <optgroup>
+                                    <option value="kenya">Kenya</option>
+                                    <option value="nigeria">Nigeria</option>
+                                    <option value="uganda">Uganda</option>
+                                    <option value="tanzania">Tanzania</option>
+                                    <!-- Tunisia is pre-selected -->
+                                    <option value="tunisia" selected>Tunisia</option>
+                                    <option value="eritrea">Eritrea</option>
+                                </optgroup>
+                            </select>
+                        </fieldset>
+                        
+                        <!-- Pets Section -->
+                        <fieldset>
+                            <legend>Pets that you have in your homestead</legend>
+                            
+                            <!-- Dog checkbox -->
+                            <label for="dog">Dog</label>
+                            <input type="checkbox" name="dog" id="dog" type="pet"><br>
+                            
+                            <!-- Cat checkbox -->
+                            <label for="cat">Cat</label>
+                            <input type="checkbox" name="cat" id="cat" type="pet"><br>
+                            
+                            <!-- Pigeon checkbox -->
+                            <label for="pigeon">Pigeon</label>
+                            <input type="checkbox" name="pigeon" id="pigeon" type="pet"><br>
+                            
+                            <!-- Parrot checkbox (checked by default) -->
+                            <label for="parrot">Parrot</label>
+                            <input type="checkbox" name="parrot" id="parrot" type="pet" checked><br>
+                        </fieldset>
+                    
+                        <!-- Submit button -->
+                        <br>
+                        <button type="submit" value="submitForm">Submit</button>
+                    </form>
+                    
+                </fieldset>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
